@@ -12,4 +12,4 @@ This application was build using no 3rd party frameworks. This does present some
 
 1. `npm install`
 1. `npm run build`
-1. Navigate to the dist folder
+1. Navigate to the docs folder
