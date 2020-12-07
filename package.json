@@ -8,8 +8,8 @@
     "build": "webpack --env prod --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "geoffmmorgan",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",

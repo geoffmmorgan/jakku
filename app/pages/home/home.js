@@ -1,6 +1,6 @@
 import DataService from '../../services/data.service';
 
-import Swimlane from './swimlane';
+import Swimlane from '../../components/swimlane/swimlane-factory';
 
 export default class Home {
 
