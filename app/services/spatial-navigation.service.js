@@ -12,7 +12,7 @@ class SpatialNavigation {
             if (this.#timeoutId) return;
 
             // we will ignore input for 500ms anytime a key is pressed to avoid overwhelming the app with navigation
-            this.#timeoutId = window.setTimeout(() => this.#timeoutId = undefined, 500);
+            this.#timeoutId = window.setTimeout(() => this.#timeoutId = undefined, 200);
 
             switch (event.code) {
                 case 'ArrowUp':
