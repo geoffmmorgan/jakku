@@ -8,7 +8,7 @@ module.exports = env => {
         mode: 'production',
         devtool: 'source-map',
         output: {
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'docs'),
             filename: '[name].[contenthash].bundle.js'
         },
         plugins: [new CleanWebpackPlugin()]
