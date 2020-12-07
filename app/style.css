@@ -1,0 +1,31 @@
+body {
+    background: url("https://prod-static.disney-plus.net/us-east-1/builds/50490ff9cdca274e6094816bceed3cd396e5f87f_1606930134181/node_modules/dss-junglebook/components/themes/images/background.png") center center / cover no-repeat fixed;
+    color: white;
+    padding: 96px;
+}
+
+app-root {
+    position: fixed;
+    transition: transform .5s;
+}
+
+a, div {
+    display: block;  
+}
+
+a:focus {
+    outline: none;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+@font-face {
+    font-family:Avenir-Heavy;
+    src:
+        url(https://prod-static.disney-plus.net/us-east-1/builds/50490ff9cdca274e6094816bceed3cd396e5f87f_1606930134181/fonts/Avenir-Heavy-05.woff) format("woff"),
+        url(https://prod-static.disney-plus.net/us-east-1/builds/50490ff9cdca274e6094816bceed3cd396e5f87f_1606930134181/fonts/Avenir-Heavy-05.ttf) format("truetype");
+    font-weight:800
+}

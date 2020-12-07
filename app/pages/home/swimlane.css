@@ -1,0 +1,88 @@
+.swimlane {
+    margin-bottom: 40px;
+    transition: transform .5s;
+}
+
+.swimlane-header {
+    color: rgb(249, 249, 249);
+    cursor: inherit;
+    font-family: Avenir-Heavy, sans-serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.swimlane-items {
+    display: flex;
+    transition: transform .5s;
+
+}
+
+/** Swimlane item styles */
+.swimlane-item {
+    width: 319px;
+    height: 179px;
+    margin-right: 40px;
+    transition: transform .5s;
+    background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)) 0% 0% / cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.swimlane-item img {
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+.swimlane-item .title {
+    font-family: Avenir-Heavy, sans-serif;
+    font-size: 16px;
+    transition: .5s;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    bottom: auto;
+    z-index: 1;
+    animation: fadeIn ease 3s;           
+}
+
+.swimlane-item:focus {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 4px black);
+    z-index: 100;
+}
+
+.swimlane-item:focus img {
+    box-shadow: 0 0 3pt 2pt white;
+}
+
+/** A bit of crazy css here because the videos have a black bar at the bottom */
+.swimlane-item .inline-video {
+    position: absolute;
+    width: 485px;
+    margin-left: -80px;
+    z-index: 3;
+    animation: fadeIn ease .5s;
+    clip-path: inset(0px 85px 90px 80px round 10px);
+}
+
+.swimlane-item .inline-video.remove {
+    opacity: 0;
+    animation: fadeOut ease .5s;
+}
